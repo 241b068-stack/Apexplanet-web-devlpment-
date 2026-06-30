@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2: Intermediate Grid & DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">InternDev</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tasks</a></li>
+        </ul>
+    </nav>
+
+    <main class="grid-container">
+        <section class="form-section">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="email">
+                    <small class="error-msg" id="emailError"></small>
+                </div>
+                <button type="submit">Submit Form</button>
+            </form>
+        </section>
+
+        <section class="todo-section">
+            <h2>Dynamic To-Do Manager</h2>
+            <div class="todo-input-wrapper">
+                <input type="text" id="todoInput" placeholder="Add a new goal...">
+                <button id="addTodoBtn">Add</button>
+            </div>
+            <ul id="todoList"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
