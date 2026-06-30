@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4: State Management and Data Ingestion Pipeline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="storage-block">
+        <h2>Notes App (Local Storage Persistence)</h2>
+        <textarea id="noteField" placeholder="Your edits are retained locally automatically across browser sessions..."></textarea>
+        <br><button id="saveNoteBtn">Commit to Memory</button>
+    </section>
+
+    <section class="filter-block">
+        <h2>Interactive Product Catalog Pipeline</h2>
+        <div class="filters">
+            <button onclick="filterCatalog('all')">Show All</button>
+            <button onclick="filterCatalog('tech')">Tech</button>
+            <button onclick="filterCatalog('style')">Style</button>
+        </div>
+        <div id="catalogGrid" class="catalog-grid"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
